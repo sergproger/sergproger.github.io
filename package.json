@@ -4,7 +4,7 @@
   "description": "Nest web project",
   "scripts": {
     "serve": "http-server dist --cors",
-    "start": "http-server dist --cors",
+    "start": "npm install",
     "test": "karma start",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail"
   },
