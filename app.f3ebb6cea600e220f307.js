@@ -419,24 +419,25 @@ webpackJsonp([0],[
 	};
 	var core_1 = __webpack_require__(7);
 	var platform_browser_1 = __webpack_require__(54);
+	var common_1 = __webpack_require__(27);
 	var app_component_1 = __webpack_require__(56);
 	var router_1 = __webpack_require__(59);
 	var app_routing_module_1 = __webpack_require__(91);
 	__webpack_require__(1);
 	var angular2_materialize_1 = __webpack_require__(5);
 	var firstview_component_1 = __webpack_require__(92);
-	var navbar_component_1 = __webpack_require__(113);
-	var footer_component_1 = __webpack_require__(116);
-	var side_menu_component_1 = __webpack_require__(119);
+	var navbar_component_1 = __webpack_require__(116);
+	var footer_component_1 = __webpack_require__(119);
+	var side_menu_component_1 = __webpack_require__(122);
 	var registration_component_1 = __webpack_require__(102);
 	var contacts_component_1 = __webpack_require__(95);
-	var contact_detail_component_1 = __webpack_require__(122);
-	var hostels_component_1 = __webpack_require__(105);
-	var hostel_component_1 = __webpack_require__(126);
-	var communication_component_1 = __webpack_require__(130);
-	var entrance_component_1 = __webpack_require__(133);
-	var feedback_component_1 = __webpack_require__(136);
-	var page_not_found_component_1 = __webpack_require__(110);
+	var contact_detail_component_1 = __webpack_require__(125);
+	var hostels_component_1 = __webpack_require__(108);
+	var hostel_component_1 = __webpack_require__(129);
+	var communication_component_1 = __webpack_require__(133);
+	var entrance_component_1 = __webpack_require__(136);
+	var feedback_component_1 = __webpack_require__(139);
+	var page_not_found_component_1 = __webpack_require__(113);
 	var AppModule = (function () {
 	    function AppModule() {
 	    }
@@ -464,6 +465,7 @@ webpackJsonp([0],[
 	                entrance_component_1.EntranceComponent,
 	                feedback_component_1.FeedbackComponent
 	            ],
+	            providers: [{ provide: common_1.LocationStrategy, useClass: common_1.HashLocationStrategy }],
 	            bootstrap: [app_component_1.AppComponent]
 	        }), 
 	        __metadata('design:paramtypes', [])
@@ -567,8 +569,8 @@ webpackJsonp([0],[
 	var firstview_component_1 = __webpack_require__(92);
 	var contacts_component_1 = __webpack_require__(95);
 	var registration_component_1 = __webpack_require__(102);
-	var hostels_component_1 = __webpack_require__(105);
-	var page_not_found_component_1 = __webpack_require__(110);
+	var hostels_component_1 = __webpack_require__(108);
+	var page_not_found_component_1 = __webpack_require__(113);
 	var routes = [
 	    { path: '', redirectTo: '/firstview', pathMatch: 'full' },
 	    { path: 'firstview', component: firstview_component_1.FirstviewComponent },
@@ -627,7 +629,7 @@ webpackJsonp([0],[
 /* 93 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"parallax-container\" style=\"width: 100%\">\r\n  <div class=\"parallax\" materialize=\"parallax\"><img src=\"http://franch.biz/franch/file/3438/franshiza-3961468.jpg\"></div>\r\n  <div class=\"section no-pad-bot\" id=\"index-banner\">\r\n    <div class=\"container\">\r\n      <br><br>\r\n      <h1 class=\"header center yellow-text text-darken-2 uniform-bg\">Выбери свой хостел</h1>\r\n      <div class=\"row center\">\r\n        <h5 class=\"header col s12 light white-text uniform-bg\">Лучшие хостелы города Санкт-Питербург</h5>\r\n      </div>\r\n      <div class=\"row center\">\r\n        <a href=\"#\" id=\"download-button\" class=\"btn-large waves-effect waves-light yellow darken-2\">Начать</a>\r\n      </div>\r\n      <br><br>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"section white\">\r\n  <div class=\"row container\">\r\n    <h2 class=\"header center yellow-text text-darken-2\">Все что вам необходимо знать о нас</h2>\r\n    <!--<p class=\"grey-text text-darken-3 lighten-3\">-->\r\n      <!--Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.-->\r\n      <div class=\"row\">\r\n        <div class=\"col s12 m4\">\r\n          <div class=\"icon-block\">\r\n            <h2 class=\"center grey-text text-darken-3\"><i class=\"material-icons\">flash_on</i></h2>\r\n            <h5 class=\"center yellow-text text-darken-2\">Мы знаем что вам нужно</h5>\r\n\r\n            <p class=\"light\">У нас вы сможете быстро забронировать и оплатить любой понравившийся вам хостел.\r\n                             С нашей помощью вы не будете волноваться и переживать за оплаченное вами место.\r\n                             Наша работа и наш сервис это удовлетворить ваше желание хорошо и приятно отдохнуть.\r\n            </p>\r\n          </div>\r\n        </div>\r\n\r\n        <div class=\"col s12 m4\">\r\n          <div class=\"icon-block\">\r\n            <h2 class=\"center grey-text text-darken-3\"><i class=\"material-icons\">group</i></h2>\r\n            <h5 class=\"center yellow-text text-darken-2\">Мы работаем для вас</h5>\r\n\r\n            <p class=\"light\">Мы проверяем все отели и отзывы каждый день. Каждый хостельер проходит верификацию под нашим контролем.\r\n                            Любой отзыв мы публикуем после 100% проверки. У нас вы видите самую правдивую и соответствующую информацию.\r\n            </p>\r\n          </div>\r\n        </div>\r\n\r\n        <div class=\"col s12 m4\">\r\n          <div class=\"icon-block\">\r\n            <h2 class=\"center grey-text text-darken-3\"><i class=\"material-icons\">settings</i></h2>\r\n            <h5 class=\"center yellow-text text-darken-2\">Мы поможем вам</h5>\r\n\r\n            <p class=\"light\">Если у вас возникли трудности либо вам не понравился ваш хостел \r\n                            или может у вас собственные проблемы вы можете нажать на кнопочку \r\n                                  и быстро с нами связаться</p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    <!--</p>-->\r\n  </div>\r\n</div>   \r\n<div class=\"parallax-container\">\r\n  <div class=\"parallax\" materialize=\"parallax\"><img src=\"http://dalinfotour.ru/uploads/Bunkbeds_Danhostel.jpg\"></div>\r\n</div>\r\n\r\n<!--<div class=\"section no-pad-bot\" id=\"index-banner\">\r\n    <div class=\"container\">\r\n      <br><br>\r\n      <h1 class=\"header center yellow-text text-darken-2\">Выбери свой хостел</h1>\r\n      <div class=\"row center\">\r\n        <h5 class=\"header col s12 light\">Лучшие хостелы города Санкт-Питербург</h5>\r\n      </div>\r\n      <div class=\"row center\">\r\n        <a href=\"#\" id=\"download-button\" class=\"btn-large waves-effect waves-light yellow darken-2\">Начать</a>\r\n      </div>\r\n      \r\n      <br><br>\r\n\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"container\">\r\n    <div class=\"section\">-->\r\n\r\n      <!--   Icon Section   -->\r\n      <!--<div class=\"row\">\r\n        <div class=\"col s12 m4\">\r\n          <div class=\"icon-block\">\r\n            <h2 class=\"center grey-text text-darken-3\"><i class=\"material-icons\">flash_on</i></h2>\r\n            <h5 class=\"center yellow-text text-darken-2\">Мы знаем что вам нужно</h5>\r\n\r\n            <p class=\"light\">У нас вы сможете быстро забронировать и оплатить любой понравившийся вам хостел.\r\n                             С нашей помощью вы не будете волноваться и переживать за оплаченное вами место.\r\n                             Наша работа и наш сервис это удовлетворить ваше желание хорошо и приятно отдохнуть.\r\n            </p>\r\n          </div>\r\n        </div>\r\n\r\n        <div class=\"col s12 m4\">\r\n          <div class=\"icon-block\">\r\n            <h2 class=\"center grey-text text-darken-3\"><i class=\"material-icons\">group</i></h2>\r\n            <h5 class=\"center yellow-text text-darken-2\">Мы работаем для вас</h5>\r\n\r\n            <p class=\"light\">Мы проверяем все отели и отзывы каждый день. Каждый хостельер проходит верификацию под нашим контролем.\r\n                            Любой отзыв мы публикуем после 100% проверки. У нас вы видите самую правдивую и соответствующую информацию.\r\n            </p>\r\n          </div>\r\n        </div>\r\n\r\n        <div class=\"col s12 m4\">\r\n          <div class=\"icon-block\">\r\n            <h2 class=\"center grey-text text-darken-3\"><i class=\"material-icons\">settings</i></h2>\r\n            <h5 class=\"center yellow-text text-darken-2\">Мы поможем вам</h5>\r\n\r\n            <p class=\"light\">Если у вас возникли трудности либо вам не понравился ваш хостел \r\n                            или может у вас собственные проблемы вы можете нажать на кнопочку \r\n                                  и быстро с нами связаться</p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n    <br><br>\r\n\r\n    <div class=\"section\">\r\n\r\n    </div>\r\n  </div>-->";
+	module.exports = "<div class=\"parallax-container\" style=\"width: 100%\">\r\n  <div class=\"parallax\" materialize=\"parallax\"><img src=\"http://franch.biz/franch/file/3438/franshiza-3961468.jpg\"></div>\r\n  <div class=\"section no-pad-bot\" id=\"index-banner\">\r\n    <div class=\"container\">\r\n      <br><br>\r\n      <h1 class=\"header center yellow-text text-darken-2 uniform-bg\">Выбери свой хостел</h1>\r\n      <div class=\"row center\">\r\n        <h5 class=\"header col s12 light white-text uniform-bg\">Лучшие хостелы города Санкт-Питербург</h5>\r\n      </div>\r\n      <div class=\"row center\">\r\n        <a id=\"download-button\" class=\"btn-large waves-effect waves-light yellow darken-2\" routerLink=\"/hostels\">Начать</a>\r\n      </div>\r\n      <br><br>\r\n    </div>\r\n  </div>\r\n</div>\r\n<div class=\"section white\">\r\n  <div class=\"row container\">\r\n    <h2 class=\"header center yellow-text text-darken-2\">Все что вам необходимо знать о нас</h2>\r\n    <!--<p class=\"grey-text text-darken-3 lighten-3\">-->\r\n      <!--Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.-->\r\n      <div class=\"row\">\r\n        <div class=\"col s12 m4\">\r\n          <div class=\"icon-block\">\r\n            <h2 class=\"center grey-text text-darken-3\"><i class=\"material-icons\">flash_on</i></h2>\r\n            <h5 class=\"center yellow-text text-darken-2\">Мы знаем что вам нужно</h5>\r\n\r\n            <p class=\"light\">У нас вы сможете быстро забронировать и оплатить любой понравившийся вам хостел.\r\n                             С нашей помощью вы не будете волноваться и переживать за оплаченное вами место.\r\n                             Наша работа и наш сервис это удовлетворить ваше желание хорошо и приятно отдохнуть.\r\n            </p>\r\n          </div>\r\n        </div>\r\n\r\n        <div class=\"col s12 m4\">\r\n          <div class=\"icon-block\">\r\n            <h2 class=\"center grey-text text-darken-3\"><i class=\"material-icons\">group</i></h2>\r\n            <h5 class=\"center yellow-text text-darken-2\">Мы работаем для вас</h5>\r\n\r\n            <p class=\"light\">Мы проверяем все отели и отзывы каждый день. Каждый хостельер проходит верификацию под нашим контролем.\r\n                            Любой отзыв мы публикуем после 100% проверки. У нас вы видите самую правдивую и соответствующую информацию.\r\n            </p>\r\n          </div>\r\n        </div>\r\n\r\n        <div class=\"col s12 m4\">\r\n          <div class=\"icon-block\">\r\n            <h2 class=\"center grey-text text-darken-3\"><i class=\"material-icons\">settings</i></h2>\r\n            <h5 class=\"center yellow-text text-darken-2\">Мы поможем вам</h5>\r\n\r\n            <p class=\"light\">Если у вас возникли трудности либо вам не понравился ваш хостел \r\n                            или может у вас собственные проблемы вы можете нажать на кнопочку \r\n                                  и быстро с нами связаться</p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    <!--</p>-->\r\n  </div>\r\n</div>   \r\n<div class=\"parallax-container\">\r\n  <div class=\"parallax\" materialize=\"parallax\"><img src=\"http://dalinfotour.ru/uploads/Bunkbeds_Danhostel.jpg\"></div>\r\n</div>\r\n\r\n<!--<div class=\"section no-pad-bot\" id=\"index-banner\">\r\n    <div class=\"container\">\r\n      <br><br>\r\n      <h1 class=\"header center yellow-text text-darken-2\">Выбери свой хостел</h1>\r\n      <div class=\"row center\">\r\n        <h5 class=\"header col s12 light\">Лучшие хостелы города Санкт-Питербург</h5>\r\n      </div>\r\n      <div class=\"row center\">\r\n        <a href=\"#\" id=\"download-button\" class=\"btn-large waves-effect waves-light yellow darken-2\">Начать</a>\r\n      </div>\r\n      \r\n      <br><br>\r\n\r\n    </div>\r\n  </div>\r\n\r\n  <div class=\"container\">\r\n    <div class=\"section\">-->\r\n\r\n      <!--   Icon Section   -->\r\n      <!--<div class=\"row\">\r\n        <div class=\"col s12 m4\">\r\n          <div class=\"icon-block\">\r\n            <h2 class=\"center grey-text text-darken-3\"><i class=\"material-icons\">flash_on</i></h2>\r\n            <h5 class=\"center yellow-text text-darken-2\">Мы знаем что вам нужно</h5>\r\n\r\n            <p class=\"light\">У нас вы сможете быстро забронировать и оплатить любой понравившийся вам хостел.\r\n                             С нашей помощью вы не будете волноваться и переживать за оплаченное вами место.\r\n                             Наша работа и наш сервис это удовлетворить ваше желание хорошо и приятно отдохнуть.\r\n            </p>\r\n          </div>\r\n        </div>\r\n\r\n        <div class=\"col s12 m4\">\r\n          <div class=\"icon-block\">\r\n            <h2 class=\"center grey-text text-darken-3\"><i class=\"material-icons\">group</i></h2>\r\n            <h5 class=\"center yellow-text text-darken-2\">Мы работаем для вас</h5>\r\n\r\n            <p class=\"light\">Мы проверяем все отели и отзывы каждый день. Каждый хостельер проходит верификацию под нашим контролем.\r\n                            Любой отзыв мы публикуем после 100% проверки. У нас вы видите самую правдивую и соответствующую информацию.\r\n            </p>\r\n          </div>\r\n        </div>\r\n\r\n        <div class=\"col s12 m4\">\r\n          <div class=\"icon-block\">\r\n            <h2 class=\"center grey-text text-darken-3\"><i class=\"material-icons\">settings</i></h2>\r\n            <h5 class=\"center yellow-text text-darken-2\">Мы поможем вам</h5>\r\n\r\n            <p class=\"light\">Если у вас возникли трудности либо вам не понравился ваш хостел \r\n                            или может у вас собственные проблемы вы можете нажать на кнопочку \r\n                                  и быстро с нами связаться</p>\r\n          </div>\r\n        </div>\r\n      </div>\r\n\r\n    </div>\r\n    <br><br>\r\n\r\n    <div class=\"section\">\r\n\r\n    </div>\r\n  </div>-->";
 
 /***/ },
 /* 94 */
@@ -757,11 +759,14 @@ webpackJsonp([0],[
 	    RegistrationComponent.prototype.openModal = function () {
 	        this.modalActions.emit({ action: "modal", params: ['open'] });
 	    };
+	    RegistrationComponent.prototype.closeModal = function () {
+	        this.modalActions.emit({ action: "modal", params: ['close'] });
+	    };
 	    RegistrationComponent = __decorate([
 	        core_1.Component({
 	            selector: 'registration',
 	            template: __webpack_require__(103),
-	            styles: [__webpack_require__(104)]
+	            styles: [__webpack_require__(107)]
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], RegistrationComponent);
@@ -772,18 +777,36 @@ webpackJsonp([0],[
 
 /***/ },
 /* 103 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<!-- Modal Structure -->\r\n<div id=\"registration\" class=\"modal\" style=\"width:24%\" materialize=\"modal\" [materializeParams]=\"[{dismissible: true}]\" [materializeActions]=\"modalActions\">\r\n\t<div class=\"modal-content\">\r\n\t\t<div class=\"row\">\r\n\t\t\t<!--tabs description-->\r\n\t\t\t<div class=\"col s12 \">\r\n\r\n\t\t\t\t<div class=\"card-panel center\">\r\n\t\t\t\t\t<span class=\"blue-text text-darken-4\">Регистрация</span>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div id=\"facebookbtn\" class=\"col s12 center light-blue darken-4 white-text z-depth-2 btn\">\r\n\t\t\t\t\t<i src=\"../../img/Facebook.png\"></i>Facebook</div>\r\n\t\t\t\t<br><br>\r\n\t\t\t\t<div id=\"googlebtn\" class=\"col s5 center red darken-4 white-text z-depth-2 btn\">\r\n\t\t\t\t\t<i src=\"../../img/Google.png\"></i>Google</div>\r\n\t\t\t\t<div id=\"vkbtn\" class=\"col s5 center blue accent-3 offset-s2 white-text z-depth-2 btn\">\r\n\t\t\t\t\t<i src=\"../../img/VKontakte.png\"></i>VK</div>\r\n\t\t\t\t<br>\r\n\t\t\t\t<br>\r\n\t\t\t\t<!--registration description-->\r\n\t\t\t\t<div id=\"registration\">\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<form class=\"col s12\">\r\n\t\t\t\t\t\t\t<div class=\"input-field col s12\">\r\n\t\t\t\t\t\t\t\t<i class=\"material-icons prefix\">email</i>\r\n\t\t\t\t\t\t\t\t<input id=\"email\" type=\"email\" class=\"validate\">\r\n\t\t\t\t\t\t\t\t<label for=\"email\" data-error=\"wrong\" data-success=\"right\">Email </label>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</form>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<form class=\"col s12\">\r\n\t\t\t\t\t\t\t<div class=\"input-field col s12\">\r\n\t\t\t\t\t\t\t\t<i class=\"material-icons prefix\">https</i>\r\n\t\t\t\t\t\t\t\t<input id=\"password\" type=\"password\" class=\"validate\">\r\n\t\t\t\t\t\t\t\t<label for=\"password\" data-error=\"wrong\" data-success=\"right\">Password </label>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</form>\r\n\t\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<form class=\"col s12\">\r\n\t\t\t\t\t\t\t<div class=\"input-field col s12\">\r\n\t\t\t\t\t\t\t\t<i class=\"material-icons prefix\">https</i>\r\n\t\t\t\t\t\t\t\t<input id=\"password\" type=\"password\" class=\"validate\">\r\n\t\t\t\t\t\t\t\t<label for=\"password\" data-error=\"wrong\" data-success=\"right\">Password </label>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</form>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"row center\">\r\n\t\t\t\t\t<label>\r\n\t\t\t\t\t\t<a class='blue-text text-darken-4' href='#entrance'><b>Уже зарегистрированы?</b></a>\r\n\t\t\t\t\t</label>\r\n\t\t\t\t</div>\r\n\r\n\t\t\t\t<div class=\"row center\">\r\n\t\t\t\t\t<button type='submit' name='btnIn' class='col s12 btn-large waves-effect white blue-text text-darken-4'>Зарегистрироваться</button>\r\n\r\n\t\t\t\t</div>\r\n\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\t<entrance></entrance>";
+	module.exports = "<!-- Modal Structure -->\r\n<div id=\"registration\" class=\"modal\" style=\"width:24%\" materialize=\"modal\" [materializeParams]=\"[{dismissible: true}]\" [materializeActions]=\"modalActions\">\r\n\r\n  <div class=\"modal-content\">\r\n    <div class=\"row\">\r\n\r\n      <!--registration description-->\r\n\r\n      <h6 class=\"grey-text text-darken-1 center\"><b>Добро пожаловать, зарегистрируйтесь</b></h6>\r\n      <div class=\"section\"></div>\r\n\r\n      <div class=\"row center\">\r\n        <a id=\"facebookbtn\" class=\"col s4 waves-effect waves-light\" href=\"https://facebook.com\">\r\n          <img src=\"" + __webpack_require__(104) + "\" /></a>\r\n        <a id=\"googlebtn\" class=\"col s4 waves-effect waves-light\" href=\"https://google.com\">\r\n          <img src=\"" + __webpack_require__(105) + "\" /></a>\r\n        <a id=\"vkbtn\" class=\"col s4 waves-effect waves-light\" href=\"https://vk.com\">\r\n          <img src=\"" + __webpack_require__(106) + "\" /></a>\r\n      </div>\r\n\r\n      <div class='row'>\r\n        <div class='input-field col s12 '>\r\n          <input class='validate' type='email' name='email' id='email' />\r\n          <label for='email'>Введите ваш email</label>\r\n        </div>\r\n      </div>\r\n\r\n      <div class='row'>\r\n        <div class='input-field col s12'>\r\n          <input class='validate' type='password' name='password' id='password' />\r\n          <label for='password'>Введите ваш пароль</label>\r\n        </div>\r\n        <label style='float: right;'>\r\n      <a class='darken-3 red-text text-darken-3' href='#!'>Придумать пароль?</a>\r\n     </label>\r\n      </div>\r\n\r\n      <div class='row center'>\r\n        <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect grey darken-4'>Зарегистрироваться</button>\r\n      </div>\r\n\r\n      <div class=\"row center\">\r\n        <a (click)=\"closeModal()\" href=\"#entrance\" class=\"red-text text-darken-3\">Уже есть аккаунт?</a>\r\n      </div>\r\n\r\n\r\n    </div>\r\n  </div>\r\n</div>\r\n<entrance></entrance>";
 
 /***/ },
 /* 104 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = ".forcenter{\r\n    align-items: center;\r\n}"
+	module.exports = __webpack_require__.p + "assets/Facebook.09549ad4558a7933917890a9d1361e37.png";
 
 /***/ },
 /* 105 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "assets/Google.da880406bc77080259a99985bbe97c0e.png";
+
+/***/ },
+/* 106 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "assets/VKontakte.7f8e4913da479120343a76dd7d6faa8f.png";
+
+/***/ },
+/* 107 */
+/***/ function(module, exports) {
+
+	module.exports = ".forcenter{\r\n    align-items: center;\r\n}\r\n   /* label color */\r\n   .input-field label {\r\n     color: #000;\r\n   }\r\n   /* label focus color */\r\n   .input-field input[type=text]:focus + label {\r\n     color: #000;\r\n   }\r\n   /* label underline focus color */\r\n   .input-field input[type=text]:focus {\r\n     border-bottom: 1px solid #000;\r\n     box-shadow: 0 1px 0 0 #000;\r\n   }\r\n   /* valid color */\r\n   .input-field input[type=text].valid {\r\n     border-bottom: 1px solid #000;\r\n     box-shadow: 0 1px 0 0 #000;\r\n   }\r\n   /* invalid color */\r\n   .input-field input[type=text].invalid {\r\n     border-bottom: 1px solid #000;\r\n     box-shadow: 0 1px 0 0 #000;\r\n   }\r\n   /* icon prefix focus color */\r\n   .input-field .prefix.active {\r\n     color: #000;\r\n   }\r\n       "
+
+/***/ },
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -797,7 +820,7 @@ webpackJsonp([0],[
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(7);
-	var hostel_service_1 = __webpack_require__(106);
+	var hostel_service_1 = __webpack_require__(109);
 	var HostelsComponent = (function () {
 	    function HostelsComponent(hostelService) {
 	        this.hostelService = hostelService;
@@ -812,8 +835,8 @@ webpackJsonp([0],[
 	    HostelsComponent = __decorate([
 	        core_1.Component({
 	            selector: 'hostels',
-	            template: __webpack_require__(108),
-	            styles: [__webpack_require__(109)],
+	            template: __webpack_require__(111),
+	            styles: [__webpack_require__(112)],
 	            providers: [hostel_service_1.HostelService]
 	        }), 
 	        __metadata('design:paramtypes', [(typeof (_a = typeof hostel_service_1.HostelService !== 'undefined' && hostel_service_1.HostelService) === 'function' && _a) || Object])
@@ -825,7 +848,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 106 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -840,7 +863,7 @@ webpackJsonp([0],[
 	};
 	var core_1 = __webpack_require__(7);
 	__webpack_require__(97);
-	var mock_hostels_1 = __webpack_require__(107);
+	var mock_hostels_1 = __webpack_require__(110);
 	var HostelService = (function () {
 	    function HostelService() {
 	    }
@@ -857,7 +880,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 107 */
+/* 110 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -872,15 +895,15 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 108 */
+/* 111 */
 /***/ function(module, exports) {
 
 	module.exports = "<ul>\r\n\t<li *ngFor=\"let hostel of hostels\">\r\n\t\t<my-hostel [hostel]=\"hostel\"></my-hostel>\r\n\t</li>\r\n</ul>";
 
 /***/ },
-/* 109 */
+/* 112 */
 101,
-/* 110 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -900,8 +923,8 @@ webpackJsonp([0],[
 	    PageNotFoundComponent = __decorate([
 	        core_1.Component({
 	            selector: 'page-not-found',
-	            template: __webpack_require__(111),
-	            styles: [__webpack_require__(112)]
+	            template: __webpack_require__(114),
+	            styles: [__webpack_require__(115)]
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], PageNotFoundComponent);
@@ -911,15 +934,15 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 111 */
+/* 114 */
 /***/ function(module, exports) {
 
 	module.exports = "<h1>Page not found :(</h1>";
 
 /***/ },
-/* 112 */
+/* 115 */
 101,
-/* 113 */
+/* 116 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -943,8 +966,8 @@ webpackJsonp([0],[
 	    NavbarComponent = __decorate([
 	        core_1.Component({
 	            selector: 'navbar',
-	            template: __webpack_require__(114),
-	            styles: [__webpack_require__(115)]
+	            template: __webpack_require__(117),
+	            styles: [__webpack_require__(118)]
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], NavbarComponent);
@@ -957,19 +980,19 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 114 */
+/* 117 */
 /***/ function(module, exports) {
 
-	module.exports = "<nav class=\"navbar grey darken-3\" role=\"navigation\">\r\n\t<div class=\"nav-wrapper\" class=\"container\">\r\n\t\t<a href=\"#\" class=\"brand-logo yellow-text text-darken-2\"><i class=\"material-icons\">cloud</i>Nest Hostels</a>\r\n\t\t<a materialize=\"sideNav\" href=\"#\" data-activates=\"slide-out\" class=\"button-collapse\">\r\n\t\t\t<i class=\"material-icons\">menu</i>\r\n\t\t</a>\r\n\t\t<ul id=\"nav-mobile grey\" class=\"right hide-on-med-and-down\">\r\n\t\t\t<li><a class=\"darken-3 yellow-text text-darken-2 waves-effect waves-light\" routerLink=\"/firstview\" routerLinkActive=\"active\">Главная</a></li>\r\n\t\t\t<li><a class=\"darken-3 yellow-text text-darken-2 waves-effect waves-light\" routerLink=\"/hostels\">Хостелы</a></li>\r\n\t\t\t<li><a class=\"darken-3 yellow-text text-darken-2 waves-effect waves-light\" routerLink=\"/contacts\" routerLinkActive=\"active\">Контакты</a></li>\r\n\t\t\t<li><a class=\"darken-3 yellow-text text-darken-2 waves-effect waves-light\" href=\"#registration\">Войти</a></li>\r\n\t\t</ul>\r\n\t\t<side-menu></side-menu>\r\n\t</div>\r\n</nav>\r\n<registration></registration>\r\n";
+	module.exports = "<nav class=\"navbar grey darken-3 nav-height\" role=\"navigation\">\r\n\t<div class=\"nav-wrapper\" class=\"container\">\r\n\t\t<a class=\"brand-logo yellow-text text-darken-2\" routerLink=\"/firstview\"><i class=\"material-icons\" style=\"font-size: 45px\">store</i>Nest Hostels</a>\r\n\t\t<a materialize=\"sideNav\" href=\"#\" data-activates=\"slide-out\" class=\"button-collapse\">\r\n\t\t\t<i class=\"material-icons\">menu</i>\r\n\t\t</a>\r\n\t\t<ul id=\"nav-mobile grey\" class=\"right hide-on-med-and-down\">\r\n\t\t\t<li><a class=\"darken-3 yellow-text text-darken-2 waves-effect waves-light\" routerLink=\"/firstview\" routerLinkActive=\"active\">Главная</a></li>\r\n\t\t\t<li><a class=\"darken-3 yellow-text text-darken-2 waves-effect waves-light\" routerLink=\"/hostels\">Хостелы</a></li>\r\n\t\t\t<li><a class=\"darken-3 yellow-text text-darken-2 waves-effect waves-light\" routerLink=\"/contacts\">Контакты</a></li>\r\n\t\t\t<li><a class=\"darken-3 yellow-text text-darken-2 waves-effect waves-light\" href=\"#registration\">Войти</a></li>\r\n\t\t</ul>\r\n\t\t<side-menu></side-menu>\r\n\t</div>\r\n</nav>\r\n<registration></registration>\r\n";
 
 /***/ },
-/* 115 */
+/* 118 */
 /***/ function(module, exports) {
 
-	module.exports = ".container{\r\n        margin: 0 auto;\r\n}"
+	module.exports = ".container{\r\n        margin: 0 auto;\r\n}\r\n.nav-height{\r\n        height: 65px !important;\r\n}"
 
 /***/ },
-/* 116 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -989,8 +1012,8 @@ webpackJsonp([0],[
 	    FooterComponent = __decorate([
 	        core_1.Component({
 	            selector: 'my-footer',
-	            template: __webpack_require__(117),
-	            styles: [__webpack_require__(118)]
+	            template: __webpack_require__(120),
+	            styles: [__webpack_require__(121)]
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], FooterComponent);
@@ -1000,19 +1023,19 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 117 */
+/* 120 */
 /***/ function(module, exports) {
 
 	module.exports = "<footer class=\"page-footer grey darken-3\">\r\n\t<div class=\"container\">\r\n\t\t<div class=\"row\">\r\n\t\t\t<div class=\"col l6 s12\">\r\n\t\t\t\t<!--<h5 class=\"grey-text darken-3\">Footer Content</h5>-->\r\n\t\t\t\t<p class=\"grey-text darken-3\">NEST HOSTELS является одним из ведущих сервисов по поиску и бронированию мест проживания в различных городах России и Беларуси.</p>\r\n\t\t\t</div>\r\n\t\t\t<div class=\"col l4 offset-l2 s12\">\r\n\t\t\t\t<!--<h5 class=\"grey-text darken-3\">Links</h5>-->\r\n\t\t\t\t<ul>\r\n\t\t\t\t\t<li><a class=\"grey-text darken-3\" routerLink=\"/firstview\" routerLinkActive=\"active\">Главная</a></li>\r\n\t\t\t\t\t<li><a class=\"grey-text darken-3\" href=\"#!\">Хостелы</a></li>\r\n\t\t\t\t\t<li><a class=\"grey-text darken-3\" href=\"#!\">Контакты</a></li>\r\n\t\t\t\t\t<li><a class=\"grey-text darken-3\" routerLink=\"/registration\" routerLinkActive=\"active\">Регистрация</a></li>\r\n\t\t\t\t</ul>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n\t<div class=\"footer-copyright copyrightrow\">\r\n\t\t<div class=\"container grey-text darken-3\">\r\n\t\t\t© 2016 Copyright SoftAutoTech\r\n\t\t\t<!--<a class=\"grey-text darken-3 right\" href=\"#!\">More Links</a>-->\r\n\t\t</div>\r\n\t</div>\r\n</footer>";
 
 /***/ },
-/* 118 */
+/* 121 */
 /***/ function(module, exports) {
 
 	module.exports = ".copyrightrow{\r\n    background-color: rgba(51, 51, 51, 1) !important;\r\n}"
 
 /***/ },
-/* 119 */
+/* 122 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1032,8 +1055,8 @@ webpackJsonp([0],[
 	    SideMenuComponent = __decorate([
 	        core_1.Component({
 	            selector: 'side-menu',
-	            template: __webpack_require__(120),
-	            styles: [__webpack_require__(121)]
+	            template: __webpack_require__(123),
+	            styles: [__webpack_require__(124)]
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], SideMenuComponent);
@@ -1043,15 +1066,15 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 120 */
+/* 123 */
 /***/ function(module, exports) {
 
 	module.exports = "<ul class=\"side-nav\" id=\"slide-out\">\r\n\t<li><a class=\"grey-text\" href=\"#\">Хостелы</a></li>\r\n\t<li><a class=\"grey-text\" href=\"#\">Цены</a></li>\r\n\t<li><a class=\"grey-text\" href=\"#\">Контакты</a></li>\r\n\t<li><a class=\"grey-text\" href=\"#modal1\">Вход</a></li>\r\n</ul>\r\n<registration></registration>";
 
 /***/ },
-/* 121 */
+/* 124 */
 101,
-/* 122 */
+/* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1065,7 +1088,7 @@ webpackJsonp([0],[
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(7);
-	var contact_1 = __webpack_require__(123);
+	var contact_1 = __webpack_require__(126);
 	var ContactDetailComponent = (function () {
 	    function ContactDetailComponent() {
 	    }
@@ -1076,8 +1099,8 @@ webpackJsonp([0],[
 	    ContactDetailComponent = __decorate([
 	        core_1.Component({
 	            selector: 'contact',
-	            template: __webpack_require__(124),
-	            styles: [__webpack_require__(125)]
+	            template: __webpack_require__(127),
+	            styles: [__webpack_require__(128)]
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], ContactDetailComponent);
@@ -1088,7 +1111,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 123 */
+/* 126 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1101,19 +1124,19 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 124 */
+/* 127 */
 /***/ function(module, exports) {
 
 	module.exports = "<div class=\"container\">\r\n\t\t<div class=\"row\">\r\n\t\t\t<div class=\"col s12 m5 l4\">\r\n\t\t\t\t<ul class=\"collection\">\r\n\t\t\t\t\t<li class=\"collection-item avatar marg grey lighten-2\">\r\n\t\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t\t<div class=\"col s1 l1\">\r\n      \t\t\t\t\t\t\t<i class=\"material-icons circle yellow-text text-darken-2\">perm_identity</i>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"col s10 l10\">\r\n      \t\t\t\t\t\t\t<span class=\"title\"><b>{{contact.FIO}}</b></span>\r\n      \t\t\t\t\t\t\t<!--<blockquote class=\"grey lighten-3\">Front-end разработчик</blockquote>-->\r\n      \t\t\t\t\t\t\t<!--<a href=\"#!\" class=\"secondary-content\"><i class=\"material-icons\">grade</i></a>-->\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</li>\r\n\t\t\t\t\t<li>\r\n\t\t\t\t\t\t<div class=\"row marg bord\">\r\n\t\t\t\t\t\t\t<div class=\"col s1 m1 l1\">\r\n\t\t\t\t\t\t\t\t<i class=\"material-icons circle yellow-text text-darken-2\">call</i>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"col s11 m11 l11\">\r\n\t\t\t\t\t\t\t\t{{contact.call}}\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"row marg bord\">\r\n\t\t\t\t\t\t\t<div class=\"col s1 m1 l1\">\r\n\t\t\t\t\t\t\t\t<i class=\"material-icons circle yellow-text text-darken-2\">email</i>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"col s11 m11 l11\">\r\n\t\t\t\t\t\t\t\t{{contact.email}}\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<div class=\"row marg bord\">\r\n\t\t\t\t\t\t\t<div class=\"col s1 m1 l1\">\r\n\t\t\t\t\t\t\t\t<i class=\"material-icons circle yellow-text text-darken-2\">location_on</i>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t\t<div class=\"col s11 m11 l11\">\r\n\t\t\t\t\t\t\t\t{{contact.location}}\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t</li>\r\n  \t\t\t\t</ul>\r\n\t\t\t</div>\r\n\t\t</div>\r\n</div>";
 
 /***/ },
-/* 125 */
+/* 128 */
 /***/ function(module, exports) {
 
 	module.exports = "blockquote{\r\n  margin: 20px 0;\r\n  padding-left: 1.5rem;\r\n  border-left: 5px solid #fbc02d; /* Just change the color value and that's it*/\r\n}\r\n.marg{\r\n  margin-bottom: 0px !important;\r\n  min-height: auto !important;\r\n}\r\n.bord{\r\n  border-bottom: 1px solid #e0e0e0;\r\n}"
 
 /***/ },
-/* 126 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1127,7 +1150,7 @@ webpackJsonp([0],[
 	    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 	};
 	var core_1 = __webpack_require__(7);
-	var hostel_1 = __webpack_require__(127);
+	var hostel_1 = __webpack_require__(130);
 	var HostelComponent = (function () {
 	    function HostelComponent() {
 	    }
@@ -1138,8 +1161,8 @@ webpackJsonp([0],[
 	    HostelComponent = __decorate([
 	        core_1.Component({
 	            selector: 'my-hostel',
-	            template: __webpack_require__(128),
-	            styles: [__webpack_require__(129)]
+	            template: __webpack_require__(131),
+	            styles: [__webpack_require__(132)]
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], HostelComponent);
@@ -1150,7 +1173,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 127 */
+/* 130 */
 /***/ function(module, exports) {
 
 	"use strict";
@@ -1163,19 +1186,19 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 128 */
+/* 131 */
 /***/ function(module, exports) {
 
 	module.exports = "<!--<div class=\"container\">\r\n\t<div class=\"row\">\r\n\t\t<div class=\"col s12 m12\">\r\n\t\t\t<div class=\"card grey darken-2\">\r\n\t\t\t\t<div class=\"card-content white-text\">\r\n\t\t\t\t\t<span class=\"card-title\">{{hostel.nameHostel}}</span>\r\n\t\t\t\t\t<p>{{hostel.descr}}</p>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"card-action\">\r\n\t\t\t\t\t<a href=\"#\">Заказать</a>\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t</div>\r\n</div>-->\r\n<div class=\"container\">\r\n\t<div class=\"col s12 m7\">\r\n    \t<div class=\"card horizontal hoverable\">\r\n      \t\t<div class=\"card-image padd\">\r\n        \t\t<img src=\"http://lorempixel.com/output/city-q-c-600-600-4.jpg\" height=\"200\" width=\"200\">\r\n      \t\t</div>\r\n      \t\t<div class=\"card-stacked\">\r\n\t\t\t\t<div class=\"card-action HostelName waves-effect waves-yellow waves-ripple\">\r\n\t\t\t\t\t<a href=\"#\"><span class=\"card-title\">{{hostel.nameHostel}}</span></a>\r\n\t\t\t\t</div>\r\n        \t\t<div class=\"card-content\">\r\n          \t\t\t<p>{{hostel.descr}}</p>\r\n        \t\t</div>\r\n      \t\t</div>\r\n    \t</div>\r\n  \t</div>\r\n</div>";
 
 /***/ },
-/* 129 */
+/* 132 */
 /***/ function(module, exports) {
 
 	module.exports = ".HostelName{\r\n    /*padding-left: 20px;\r\n    padding-top: 10px;\r\n    padding-bottom: 10px;*/\r\n    border-bottom: 1px solid #e0e0e0;\r\n}\r\n.waves-effect.waves-yellow .waves-ripple {\r\n     /* The alpha value allows the text and background color\r\n     of the button to still show through. */\r\n      background-color: #fbc02d;\r\n}\r\n.padd{\r\n    padding-top: 10px;\r\n    padding-left: 10px;\r\n    padding-bottom: 10px;\r\n}"
 
 /***/ },
-/* 130 */
+/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1195,8 +1218,8 @@ webpackJsonp([0],[
 	    CommunicationComponent = __decorate([
 	        core_1.Component({
 	            selector: 'communication',
-	            template: __webpack_require__(131),
-	            styles: [__webpack_require__(132)]
+	            template: __webpack_require__(134),
+	            styles: [__webpack_require__(135)]
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], CommunicationComponent);
@@ -1206,15 +1229,15 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 131 */
+/* 134 */
 /***/ function(module, exports) {
 
 	module.exports = "  <div class=\"fixed-action-btn vertical click-to-toggle\">\r\n    <a class=\"btn-floating btn-large yellow\">\r\n      <i class=\"large material-icons\">mode_edit</i>\r\n    </a>\r\n    <ul>\r\n      <li><a class=\"btn-floating red\"><i class=\"material-icons\">insert_chart</i></a></li>\r\n      <li><a class=\"btn-floating yellow darken-1\"><i class=\"material-icons\">format_quote</i></a></li>\r\n      <li><a class=\"btn-floating green\"><i class=\"material-icons\">publish</i></a></li>\r\n      <li><a class=\"btn-floating blue\"><i class=\"material-icons\">attach_file</i></a></li>\r\n    </ul>\r\n  </div>";
 
 /***/ },
-/* 132 */
+/* 135 */
 101,
-/* 133 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1235,11 +1258,14 @@ webpackJsonp([0],[
 	    EntranceComponent.prototype.openModal = function () {
 	        this.modalActions.emit({ action: "modal", params: ['open'] });
 	    };
+	    EntranceComponent.prototype.closeModal = function () {
+	        this.modalActions.emit({ action: "modal", params: ['close'] });
+	    };
 	    EntranceComponent = __decorate([
 	        core_1.Component({
 	            selector: 'entrance',
-	            template: __webpack_require__(134),
-	            styles: [__webpack_require__(135)]
+	            template: __webpack_require__(137),
+	            styles: [__webpack_require__(138)]
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], EntranceComponent);
@@ -1249,15 +1275,19 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 134 */
-/***/ function(module, exports) {
+/* 137 */
+/***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<!-- Modal Structure -->\r\n<div id=\"entrance\" class=\"modal\" style=\"width:24%\" materialize=\"modal\" [materializeParams]=\"[{dismissible: true}]\" [materializeActions]=\"modalActions\">\r\n\t<div class=\"modal-content\">\r\n\t\t<div class=\"row\">\r\n\t\t\t<!--tabs description-->\r\n\t\t\t<div class=\"col s12 \">\r\n\r\n\t\t\t\t<div class=\"card-panel center\">\r\n\t\t\t\t\t<span class=\"blue-text text-darken-4\">Регистрация</span>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div id=\"facebookbtn\" class=\"col s12 center light-blue darken-4 white-text z-depth-2 btn\">\r\n\t\t\t\t\t<i src=\"img/Facebook.png\"></i>Facebook</div>\r\n\t\t\t\t<br><br>\r\n\t\t\t\t<div id=\"googlebtn\" class=\"col s5 center red darken-4 white-text z-depth-2 btn\">\r\n\t\t\t\t\t<i src=\"img/Google.png\"></i>Google</div>\r\n\t\t\t\t<div id=\"vkbtn\" class=\"col s5 center blue accent-3 offset-s2 white-text z-depth-2 btn\">\r\n\t\t\t\t\t<i src=\"img/VKontakte.png\"></i>VK</div>\r\n\t\t\t\t<br>\r\n\t\t\t\t<br>\r\n\t\t\t\t<!--registration description-->\r\n\t\t\t\t<div id=\"registration\">\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<form class=\"col s12\">\r\n\t\t\t\t\t\t\t<div class=\"input-field col s12\">\r\n\t\t\t\t\t\t\t\t<i class=\"material-icons prefix\">email</i>\r\n\t\t\t\t\t\t\t\t<input id=\"email\" type=\"email\" class=\"validate\">\r\n\t\t\t\t\t\t\t\t<label for=\"email\" data-error=\"wrong\" data-success=\"right\">Email </label>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</form>\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t\t<div class=\"row\">\r\n\t\t\t\t\t\t<form class=\"col s12\">\r\n\t\t\t\t\t\t\t<div class=\"input-field col s12\">\r\n\t\t\t\t\t\t\t\t<i class=\"material-icons prefix\">https</i>\r\n\t\t\t\t\t\t\t\t<input id=\"password\" type=\"password\" class=\"validate\">\r\n\t\t\t\t\t\t\t\t<label for=\"password\" data-error=\"wrong\" data-success=\"right\">Password </label>\r\n\t\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t</form>\r\n\t\t\t\t\t\t<label style='float:right;'>\r\n\t\t\t\t\t\t<a class='blue-text text-darken-4' href='#!'><b>Забыли пароль?</b></a>\r\n\t\t\t\t\t</label>\r\n\t\t\t\t\t</div>\r\n\r\n\r\n\t\t\t\t\t<div class=\"row center\">\r\n\t\t\t\t\t\t<button type='submit' name='btnIn' class='col s12 btn-large waves-effect white blue-text text-darken-4'>Зарегистрироваться</button>\r\n\r\n\t\t\t\t\t</div>\r\n\r\n\t\t\t\t</div>\r\n\t\t\t</div>\r\n\t\t</div>";
+	module.exports = "<!-- Modal Structure -->\r\n<div id=\"entrance\" class=\"modal\" style=\"width:24%\" materialize=\"modal\" [materializeParams]=\"[{dismissible: true}]\" [materializeActions]=\"modalActions\">\r\n\r\n  <div class=\"modal-content\">\r\n    <div class=\"row\">\r\n\r\n      <!--registration description-->\r\n\r\n      <h6 class=\"grey-text text-darken-1 center\"><b>Добро пожаловать, войдите</b></h6>\r\n      <div class=\"section\"></div>\r\n\r\n      <div class=\"row center\">\r\n        <a id=\"facebookbtnIN\" class=\"col s4 waves-effect waves-light\" href=\"https://facebook.com\">\r\n          <img src=\"" + __webpack_require__(104) + "\" /></a>\r\n        <a id=\"googlebtnIN\" class=\"col s4 waves-effect waves-light\" href=\"https://google.com\">\r\n          <img src=\"" + __webpack_require__(105) + "\" /></a>\r\n        <a id=\"vkbtnIN\" class=\"col s4 waves-effect waves-light\" href=\"https://vk.com\">\r\n          <img src=\"" + __webpack_require__(106) + "\" /></a>\r\n      </div>\r\n\r\n      <div class='row'>\r\n        <div class='input-field col s12 '>\r\n          <input class='validate' type='email' name='email' id='emailIN' />\r\n          <label for='email'>Введите ваш email</label>\r\n        </div>\r\n      </div>\r\n\r\n      <div class='row'>\r\n        <div class='input-field col s12'>\r\n          <input class='validate' type='password' name='password' id='passwordIN' />\r\n          <label for='password'>Введите ваш пароль</label>\r\n        </div>\r\n        <label style='float: right;'>\r\n      <a class='darken-3 red-text text-darken-3' href='#!'>Забыли пароль?</a>\r\n     </label>\r\n      </div>\r\n\r\n      <div class='row center'>\r\n        <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect grey darken-4'>Войти</button>\r\n      </div>\r\n\r\n      <div class=\"row center\">\r\n        <a (click)=\"closeModal()\" href=\"#registration\" class=\"red-text text-darken-3\">Зарегистрироваться?</a>\r\n      </div>\r\n\r\n\r\n    </div>\r\n  </div>\r\n</div>\r\n";
 
 /***/ },
-/* 135 */
-104,
-/* 136 */
+/* 138 */
+/***/ function(module, exports) {
+
+	module.exports = ".forcenter{\r\n    align-items: center;\r\n}\r\n  /* label color */\r\n   .input-field label {\r\n     color: #000;\r\n   }\r\n   /* label focus color */\r\n   .input-field input[type=text]:focus + label {\r\n     color: #000;\r\n   }\r\n   /* label underline focus color */\r\n   .input-field input[type=text]:focus {\r\n     border-bottom: 1px solid #000;\r\n     box-shadow: 0 1px 0 0 #000;\r\n   }\r\n   /* valid color */\r\n   .input-field input[type=text].valid {\r\n     border-bottom: 1px solid #000;\r\n     box-shadow: 0 1px 0 0 #000;\r\n   }\r\n   /* invalid color */\r\n   .input-field input[type=text].invalid {\r\n     border-bottom: 1px solid #000;\r\n     box-shadow: 0 1px 0 0 #000;\r\n   }\r\n   /* icon prefix focus color */\r\n   .input-field .prefix.active {\r\n     color: #000;\r\n   }\r\n       "
+
+/***/ },
+/* 139 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1277,8 +1307,8 @@ webpackJsonp([0],[
 	    FeedbackComponent = __decorate([
 	        core_1.Component({
 	            selector: 'feedback',
-	            template: __webpack_require__(137),
-	            styles: [__webpack_require__(138)]
+	            template: __webpack_require__(140),
+	            styles: [__webpack_require__(141)]
 	        }), 
 	        __metadata('design:paramtypes', [])
 	    ], FeedbackComponent);
@@ -1288,13 +1318,17 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 137 */
+/* 140 */
 /***/ function(module, exports) {
 
 	module.exports = " <div class=\"fixed-action-btn horizontal click-to-toggle\">\r\n    <a class=\"btn-floating btn-large red\">\r\n      <i class=\"material-icons\">menu</i>\r\n    </a>\r\n    <ul>\r\n      <li><a class=\"btn-floating red\"><i class=\"material-icons\">insert_chart</i></a></li>\r\n      <li><a class=\"btn-floating yellow darken-1\"><i class=\"material-icons\">format_quote</i></a></li>\r\n      <li><a class=\"btn-floating green\"><i class=\"material-icons\">publish</i></a></li>\r\n      <li><a class=\"btn-floating blue\"><i class=\"material-icons\">attach_file</i></a></li>\r\n    </ul>\r\n  </div>";
 
 /***/ },
-/* 138 */
-104
+/* 141 */
+/***/ function(module, exports) {
+
+	module.exports = ".forcenter{\r\n    align-items: center;\r\n}"
+
+/***/ }
 ]);
-//# sourceMappingURL=app.3bd8fbd7197493adda73.js.map
+//# sourceMappingURL=app.f3ebb6cea600e220f307.js.map
