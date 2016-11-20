@@ -994,13 +994,13 @@ webpackJsonp([0],[
 /* 117 */
 /***/ function(module, exports) {
 
-	module.exports = "<div class=\"navbar-fixed\">\r\n\t<nav class=\"navbar grey darken-3 nav-height\" role=\"navigation\">\r\n\t\t<div class=\"nav-wrapper\" class=\"container\">\r\n\t\t\t<a class=\"brand-logo yellow-text text-darken-2\" routerLink=\"/firstview\"><i class=\"material-icons\" style=\"font-size: 45px\">store</i>Nest Hostels</a>\r\n\r\n\t\t\t<ul id=\"nav-mobile grey\" class=\"right hide-on-med-and-down\">\r\n\t\t\t\t<li><a class=\"darken-3 yellow-text text-darken-2 waves-effect waves-light\" routerLink=\"/firstview\" routerLinkActive=\"active\">Главная</a></li>\r\n\t\t\t\t<li><a class=\"darken-3 yellow-text text-darken-2 waves-effect waves-light\" routerLink=\"/hostels\">Хостелы</a></li>\r\n\t\t\t\t<li><a class=\"darken-3 yellow-text text-darken-2 waves-effect waves-light\" routerLink=\"/contacts\">Контакты</a></li>\r\n\t\t\t\t<li><a class=\"darken-3 yellow-text text-darken-2 waves-effect waves-light\" href=\"#registration\">Войти</a></li>\r\n\t\t\t</ul>\r\n\t\t\t<a href=\"#\" data-activates=\"slide-out\" class=\"button-collapse\" (click)=\"collapseButtonClick()\">\r\n\t\t\t\t<i class=\"material-icons\">menu</i>\r\n\t\t\t</a>\r\n\t\t\t\r\n\t\t</div>\r\n\t</nav>\r\n</div>\r\n<side-menu></side-menu>\r\n<registration></registration>";
+	module.exports = "<div class=\"navbar-fixed\">\r\n\t<nav class=\"navbar grey darken-3 nav-height\" role=\"navigation\">\r\n\t\t<div class=\"nav-wrapper\" class=\"container\">\r\n\t\t\t<a class=\"brand-logo yellow-text text-darken-2 padd-logo\" routerLink=\"/firstview\"><i class=\"material-icons\" style=\"font-size: 45px\">store</i>Nest Hostels</a>\r\n\r\n\t\t\t<ul id=\"nav-mobile grey\" class=\"right hide-on-med-and-down marg-nav\">\r\n\t\t\t\t<li><a class=\"darken-3 yellow-text text-darken-2 waves-effect waves-light\" routerLink=\"/firstview\" routerLinkActive=\"active\">Главная</a></li>\r\n\t\t\t\t<li><a class=\"darken-3 yellow-text text-darken-2 waves-effect waves-light\" routerLink=\"/hostels\">Хостелы</a></li>\r\n\t\t\t\t<li><a class=\"darken-3 yellow-text text-darken-2 waves-effect waves-light\" routerLink=\"/contacts\">Контакты</a></li>\r\n\t\t\t\t<li><a class=\"darken-3 yellow-text text-darken-2 waves-effect waves-light\" href=\"#registration\">Войти</a></li>\r\n\t\t\t</ul>\r\n\t\t\t<a href=\"#\" data-activates=\"slide-out\" class=\"button-collapse\" (click)=\"collapseButtonClick()\">\r\n\t\t\t\t<i class=\"material-icons\">menu</i>\r\n\t\t\t</a>\r\n\t\t\t\r\n\t\t</div>\r\n\t</nav>\r\n</div>\r\n<side-menu></side-menu>\r\n<registration></registration>";
 
 /***/ },
 /* 118 */
 /***/ function(module, exports) {
 
-	module.exports = ".container{\r\n        margin: 0 auto;\r\n}\r\n.nav-height{\r\n        height: 65px !important;\r\n}\r\n@media screen and (max-width: 600px){\r\n        .nav-height{\r\n                height: 56px !important;\r\n        }\r\n}"
+	module.exports = ".container{\r\n        margin: 0 auto;\r\n}\r\n.nav-height{\r\n        height: 65px !important;\r\n}\r\nnav i.material-icons{\r\n        line-height: 64px !important;\r\n}\r\n.marg-nav{\r\n        margin-right: -14.5px !important;\r\n}\r\n.padd-logo{\r\n        padding-left: 2.5px !important;\r\n}\r\n@media screen and (max-width: 600px){\r\n        .nav-height{\r\n                height: 56px !important;\r\n        }\r\n}"
 
 /***/ },
 /* 119 */
@@ -1346,4 +1346,4 @@ webpackJsonp([0],[
 
 /***/ }
 ]);
-//# sourceMappingURL=app.8b6a10c9e3f2ba1dac30.js.map
+//# sourceMappingURL=app.1baa788afde9cba242e3.js.map

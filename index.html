@@ -11,17 +11,92 @@
 	<link rel="icon" type="image/png" href="http://www.homebusinesswiz.com/wp-content/uploads/2016/02/cropped-favicon-1.png" sizes="32x32">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<link href="/app.8b6a10c9e3f2ba1dac30.css" rel="stylesheet"></head>
+
+	<STYLE type="text/css">
+		.icon-block {
+  			padding: 0 15px;
+		}
+		.icon-block .material-icons {
+			font-size: inherit;
+		}
+  		.uniform-bg {
+			background:rgba(80, 80, 80, 0.7);
+			position:relative;
+			outline: rgba(80, 80, 80, 0.7) solid 0.3em;
+		}
+		.crop img{
+			position: absolute;
+			width: 100%;
+        	margin:-195px -1500px -1500px 0px;
+			z-index: auto;
+		}
+		.container{
+        	margin: 0 auto;
+		}
+		.nav-height{
+        	height: 65px !important;
+		}
+		@media screen and (max-width: 600px){
+        	.nav-height{
+                height: 56px !important;
+        	}
+		}
+ 	</STYLE>
+
+<link href="/app.1baa788afde9cba242e3.css" rel="stylesheet"></head>
 
 <body>
 	<my-app>
-		<h1 class="yellow-text center">Саня пидор</h1>
-		<div class="sk-chasing-dots">
+		<!--<div class="navbar-fixed">-->
+			<nav class="navbar grey darken-3 nav-height" role="navigation">
+				<div class="container">
+					<div class="nav-wrapper">
+						<a class="brand-logo yellow-text text-darken-2" routerLink="/firstview"><i class="material-icons" style="font-size: 45px">store</i>Nest Hostels</a>
+						<ul id="nav-mobile grey" class="right hide-on-med-and-down">
+							<li><a class="darken-3 yellow-text text-darken-2 waves-effect waves-light" routerLink="/firstview" routerLinkActive="active">Главная</a></li>
+							<li><a class="darken-3 yellow-text text-darken-2 waves-effect waves-light" routerLink="/hostels">Хостелы</a></li>
+							<li><a class="darken-3 yellow-text text-darken-2 waves-effect waves-light" routerLink="/contacts">Контакты</a></li>
+							<li><a class="darken-3 yellow-text text-darken-2 waves-effect waves-light" href="#registration">Войти</a></li>
+						</ul>
+						<a href="#" data-activates="slide-out" class="button-collapse" (click)="collapseButtonClick()">
+							<i class="material-icons">menu</i>
+						</a>
+					</div>
+				</div>
+			</nav>
+		<!--<div class="crop"><img src="http://franch.biz/franch/file/3438/franshiza-3961468.jpg" ></div>-->
+		<div class="container">
+      		<br><br>
+      		<h1 class="header center yellow-text text-darken-2 uniform-bg">Выбери свой хостел</h1>
+      		<div class="row center">
+        		<h5 class="header col s12 light white-text uniform-bg">Лучшие хостелы города Санкт-Питербург</h5>
+      		</div>
+      		<br><br>
+    	</div>	
+		<!--</div>-->
+		<!--<h1 class="black-text center"> Please, wait a few moments</h1>
+		<h2 class="black-text center">Loading</h2>-->
+		<div class="center">
+		<div class="preloader-wrapper big active">
+    		<div class="spinner-layer spinner-yellow-only">
+      			<div class="circle-clipper left">
+        			<div class="circle"></div>
+      			</div>
+				<div class="gap-patch">
+        			<div class="circle"></div>
+      			</div>
+				<div class="circle-clipper right">
+        			<div class="circle"></div>
+      			</div>
+    		</div>
+  		</div>
+		</div>
+		<!--<div class="sk-chasing-dots">
 			<div class="sk-child sk-dot1"></div>
 			<div class="sk-child sk-dot2"></div>
-		</div>
+		</div>-->
 	</my-app>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> 
-<script type="text/javascript" src="/polyfills.8b6a10c9e3f2ba1dac30.js"></script><script type="text/javascript" src="/vendor.8b6a10c9e3f2ba1dac30.js"></script><script type="text/javascript" src="/app.8b6a10c9e3f2ba1dac30.js"></script></body>
+<script type="text/javascript" src="/polyfills.1baa788afde9cba242e3.js"></script><script type="text/javascript" src="/vendor.1baa788afde9cba242e3.js"></script><script type="text/javascript" src="/app.1baa788afde9cba242e3.js"></script></body>
 
 </html>
