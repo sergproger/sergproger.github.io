@@ -12,6 +12,14 @@
   <script src="js/skel.min.js"></script>
   <script src="js/skel-panels.min.js"></script>
   <script src="js/init.js"></script>
+  <script>
+    $(window).on('load', function () {
+      var $preloader = $('#page-preloader'),
+        $spinner = $preloader.find('.spinner');
+      $spinner.fadeOut();
+      $preloader.delay(100).fadeOut('slow');
+    });
+  </script>
   <noscript>
     <link rel="stylesheet" href="css/skel-noscript.css">
     <link rel="stylesheet" href="css/style.css">
@@ -26,6 +34,7 @@
 </head>
 
 <body>
+  <div id="page-preloader"><span class="spinner"></span></div>
   <div id="header" class="skel-panels-fixed">
     <div class="top">
       <div id="logo">
