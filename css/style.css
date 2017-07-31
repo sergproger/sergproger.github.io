@@ -1123,11 +1123,11 @@
 }
 
 #page-preloader .spinner {
-    width: 32px;
-    height: 32px;
+    width: 64px;
+    height: 64px;
     position: absolute;
     left: 50%;
     top: 50%;
-    background: url('/images/spinner.gif') no-repeat 50% 50%;
+    background: url('../images/spinner.gif') no-repeat 50% 50%;
     margin: -16px 0 0 -16px;
 }

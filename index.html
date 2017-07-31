@@ -17,7 +17,7 @@
       var $preloader = $('#page-preloader'),
         $spinner = $preloader.find('.spinner');
       $spinner.fadeOut();
-      $preloader.delay(100).fadeOut('slow');
+      $preloader.delay(50).fadeOut('slow');
     });
   </script>
   <noscript>
@@ -34,7 +34,9 @@
 </head>
 
 <body>
-  <div id="page-preloader"><span class="spinner"></span></div>
+  <div id="page-preloader">
+    <span class="spinner"></span>  
+  </div>
   <div id="header" class="skel-panels-fixed">
     <div class="top">
       <div id="logo">
