@@ -8,7 +8,7 @@
   <!--[if lte IE 8]>
 <script src="js/html5shiv.js"></script>
 <![endif]-->
-  <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>
   <script src="js/skel.min.js"></script>
   <script src="js/skel-panels.min.js"></script>
   <script src="js/init.js"></script>
@@ -17,7 +17,9 @@
       var $preloader = $('#page-preloader'),
         $spinner = $preloader.find('.spinner');
       $spinner.fadeOut();
+      $('#body').removeClass('hidden');
       $preloader.delay(50).fadeOut('slow');
+
     });
   </script>
   <noscript>
@@ -33,7 +35,7 @@
 <![endif]-->
 </head>
 
-<body>
+<body id="body" class="hidden">
   <div id="page-preloader">
     <span class="spinner"></span>  
   </div>
