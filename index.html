@@ -15,11 +15,10 @@
   <script>
     $(window).on('load', function () {
       var $preloader = $('#page-preloader'),
-        $spinner = $preloader.find('.spinner');
-      $spinner.fadeOut();
-      
+      $spinner = $preloader.find('.spinner');
+      $spinner.fadeOut();      
       $preloader.delay(50).fadeOut('slow');
-$('#body').removeClass('hidden');
+      $('#body').removeClass('hidden');
     });
   </script>
   <noscript>
